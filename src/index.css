@@ -1,0 +1,47 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: 'Space Grotesk', 'Clash Display', sans-serif;
+}
+
+/* Custom styles for Kost Putra Jastanto - Bright Gentleman Brutalism */
+body {
+  font-family: 'Space Grotesk', 'Clash Display', sans-serif;
+  scroll-behavior: smooth;
+  background-color: #F8FAFC; /* Clean Slate 50 */
+  color: #1E293B; /* Slate 800 - Softer than black but strong */
+}
+
+/* Base neo-brutalism utility classes */
+@layer utilities {
+  .brutal-border {
+    border: 3px solid #1E293B;
+  }
+  
+  .brutal-shadow {
+    box-shadow: 4px 4px 0px 0px #1E293B;
+  }
+  
+  .brutal-shadow-sm {
+    box-shadow: 2px 2px 0px 0px #1E293B;
+  }
+  
+  .brutal-shadow-lg {
+    box-shadow: 8px 8px 0px 0px #1E293B;
+  }
+
+  .brutal-shadow-hover {
+    transition: all 0.2s ease;
+  }
+
+  .brutal-shadow-hover:hover {
+    transform: translate(2px, 2px);
+    box-shadow: 2px 2px 0px 0px #1E293B;
+  }
+  
+  .brutal-shadow-active:active {
+    transform: translate(4px, 4px);
+    box-shadow: 0px 0px 0px 0px #1E293B;
+  }
+}
